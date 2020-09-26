@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+ datasource:
+  username: root
+  password: root
+# 在url之后要加上时区信息，否则会报错(mysql版本高对安全校验的提高)
+  url: jdbc:mysql://127.0.0.1:3306/spb_9_19?serverTimezone=Asia/Shanghai
+  driver-class-name: com.mysql.jdbc.Driver
+  type: org.apache.commons.dbcp.BasicDataSource
+
+mybatis:
+  # 指定全局配置文件位置
+  config-location: classpath:mybatis/mybatis-config.xml
+  # 指定sql映射文件位置
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
