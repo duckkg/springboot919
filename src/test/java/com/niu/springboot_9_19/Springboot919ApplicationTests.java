@@ -24,7 +24,7 @@ public class Springboot919ApplicationTests {
     }
 
     @Test
-    public void springTest2(){
+    public void springTest4(){
         List<String> list=new ArrayList<>();
         list.add("duck");
         list.add("root");
